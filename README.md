@@ -19,7 +19,7 @@ src
           di
             ys09
               Numbers.java          a helper class that processes numbers
-              TestServlet           a simple servlet example
+              TestServlet.java      a simple servlet example
     webapp                          the directory of the web app 
       index.jsp                     a jsp example
       test.groovy                   the same example in a groovlet
@@ -30,5 +30,14 @@ src
         web.xml
 ```
 
-## Gradle commands
+## Gradle tasks
 
+Invoke gradle using the following command: 
+
+``` > ./gradlew [tasks] ```
+
+Some useful tasks include:
+
+* classes: compile all sources (java and groovy)
+* war    : generate war file (to be deployed to a container like tomcat)
+* appRun : compile and deploy everything into an embedded container, automatically re-deploying the files you change during its execution
