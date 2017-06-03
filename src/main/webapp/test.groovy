@@ -2,12 +2,14 @@ import gr.uoa.di.ys09.*
 
 html.html {
 	head {
-		meta('http-equiv':"Content-Type", 'content':"text/html; charset=utf-8")
+		meta('charset':'utf-8')
+		meta('name':'viewport', 'content':'width=device-width, initial-scale=1.0')
+        link('rel':'stylesheet', 'href':'static/css/bootstrap.min.css')  
 		title("Groovy App Home")
 	}
 	body {
 		div {
-			img(src:"./static/logo.png")
+			img(src:"static/img/logo.png")
 		}
 
 		h1("Καλώς ήλθατε")
@@ -32,7 +34,7 @@ html.html {
 			Numbers numbers = Numbers.parse(inputNumbers)
 
 			hr()			
-			div("Πλήθος: ${numbers.count()} αριθμοί")
+			div("Πληθάριθμος: ${numbers.count()}")
 			div("Άθροισμα: ${numbers.sum()}")
 		}
 	}
